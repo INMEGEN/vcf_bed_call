@@ -1,7 +1,7 @@
 #!/bin/bash 
 
 find -L data/ \
-	-name "*.vcf" \
+	-name "*.vcf.gz" \
 | sed \
 	-e 's#data/#results/vcf_bed_call/#g' \
-	-e 's#\.vcf$#.trimmed.vcf#g'
+	-e 's#\.vcf\.gz$#.trimmed.vcf#g'
